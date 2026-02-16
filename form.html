@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Profile Builder</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Create Your Profile</h2>
+
+    <form id="profileForm">
+
+        <label>Username</label>
+        <input type="text" id="username">
+        <small class="error"></small>
+
+        <label>Email</label>
+        <input type="text" id="email">
+        <small class="error"></small>
+
+        <label>Password</label>
+        <input type="password" id="password">
+        <small class="error"></small>
+
+        <label>Confirm Password</label>
+        <input type="password" id="confirmPassword">
+        <small class="error"></small>
+
+        <label>Phone Number</label>
+        <input type="text" id="phone">
+        <small class="error"></small>
+
+        <label>Portfolio / Website Link</label>
+        <input type="text" id="website">
+
+        <label>Gender</label>
+        <select id="gender">
+            <option value="">Select Gender</option>
+            <option>Female</option>
+            <option>Male</option>
+            <option>Other</option>
+        </select>
+        <small class="error"></small>
+
+        <label>Upload Profile Image</label>
+        <input type="file" id="image" accept="image/*">
+
+        <button type="submit">Generate Profile</button>
+
+    </form>
+
+    <div id="profilePreview"></div>
+
+    <a href="index.html" class="back-btn">← Back to Portfolio</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
